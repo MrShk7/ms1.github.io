@@ -1,0 +1,167 @@
+body{
+	font-family: century gothic,sens-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	background-color: grey;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	background-color: black;
+	color: white;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: 3px solid orange; 
+}
+.org{
+	color: orange;
+}
+header ul{
+	
+	margin: 0;
+	padding: 0;
+}
+header li{
+	display: inline;
+	float: left;
+
+	padding: 0 10px 0 10px;
+}
+header a{
+	color: orange;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding: 5px;
+	transition: 0.3s ease;
+	text-decoration: none;
+}
+.logo{
+	float: left;
+}
+.logo h1{
+	margin: 0;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header a:hover{
+	background-color: orange;
+	color: white;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding: 5px;
+}
+header .active a{
+	background-color: orange;
+	color: white;
+}
+
+.show{
+	background-image: url('./img/show3.jpg');
+	background-position: 0 -100px;
+	min-height: 700px; 
+}
+
+.show h1{
+	font-size: 100px;
+	color: white;
+}
+.show p{
+	font-size: 30px;
+	color: white;
+}
+.subscribe{
+	background-color: black;
+	min-height: 100px;
+	padding-top: 20px;
+	color: white;
+}
+.subscribe h1{
+	float: left;
+}
+.subscribe form{
+	margin-top: 25px;	 
+	float: right;
+	text-align: center;
+}
+.subscribe input{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+.btnsub{
+	height: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: orange;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.btnsub:hover{
+	background-color: #e8491d;
+}
+.Boxes{
+	margin-top: 20px;
+}
+.box{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+.box img{
+	width: 200px;
+}
+
+footer{
+	padding-top: 20px;
+	min-height: 100px;  
+	background-color: black;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+@media (max-width: 768px){
+	header, header .logo,
+	header nav,
+	header li,
+	.subscribe h1,
+	.subscribe form,
+	.box
+	{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header{
+		padding-bottom: 20px;
+	}
+	.subscribe input{
+		display: block;
+		width: 100%;
+		margin: 10px;
+	}
+	.subscribe button{
+		display: block;
+		width: 100%;
+		margin: 10px;
+	}
+	.show{
+		background-position: -200px -100px;
+	}
+	.show h1{
+		font-size: 50px;
+	}
+}
